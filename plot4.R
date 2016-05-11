@@ -1,4 +1,5 @@
 #Read data from csv with seperator ; 
+
 powerdata<-read.csv(file='household_power_consumption.txt' ,sep=';',header=TRUE, stringsAsFactors = FALSE, na.strings= "?", strip.white=TRUE)
 #convert date for filter
 powerdata$Date<-as.Date(powerdata$Date, format="%d/%m/%Y")
